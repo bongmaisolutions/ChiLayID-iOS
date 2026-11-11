@@ -35,11 +35,9 @@ jobs:
       - name: Package Payload into ChiLayID.ipa
         run: |
           mkdir -p Payload
-          if [ -d "build/Build/Products/Release-iphoneos/BMSZalo.app" ]; then
-            cp -R build/Build/Products/Release-iphoneos/BMSZalo.app Payload/ChiLayID.app
-          elif [ -d "build/Build/Products/Release-iphoneos/ChiLayID.app" ]; then
-            cp -R build/Build/Products/Release-iphoneos/ChiLayID.app Payload/ChiLayID.app
-          fi
+          APP_PATH=$(find build/Build/Products/Release-iphoneos -name "*.app" -type d | head -n 1)
+          echo "Found compiled app at: $APP_PATH"
+          cp -R "$APP_PATH" Payload/ChiLayID.app
           zip -r9 ChiLayID.ipa Payload
 
       - name: Upload ChiLayID.ipa Artifact

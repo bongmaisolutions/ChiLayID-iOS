@@ -2,7 +2,7 @@ name: BMSZaloiOS
 options:
   bundleIdPrefix: vn.beos
   deploymentTarget:
-    iOS: "16.0"
+    iOS: "17.0"
 packages:
   BMSZalo:
     path: .
@@ -10,7 +10,7 @@ targets:
   BMSZaloiOS:
     type: application
     platform: iOS
-    deploymentTarget: "16.0"
+    deploymentTarget: "17.0"
     sources:
       - path: iOSApp
         excludes:
@@ -19,8 +19,8 @@ targets:
       path: iOSApp/Info.plist
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: vn.beos.bmszalo.ios
-        PRODUCT_NAME: BMSZalo
+        PRODUCT_BUNDLE_IDENTIFIER: vn.beos.chilayid.ios
+        PRODUCT_NAME: ChiLayID
         SWIFT_VERSION: 5.9
         TARGETED_DEVICE_FAMILY: "1,2"
         CODE_SIGNING_ALLOWED: NO
