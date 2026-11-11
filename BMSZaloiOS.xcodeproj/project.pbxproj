@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000012B00000100000001 /* BMSZaloiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022B00000100000001 /* BMSZaloiOSApp.swift */; };
+		A10000032B00000100000001 /* BMSZaloApp in Frameworks */ = {isa = PBXBuildFile; productRef = A10000042B00000100000001 /* BMSZaloApp */; };
+		A10000052B00000100000001 /* ZolaKit in Frameworks */ = {isa = PBXBuildFile; productRef = A10000062B00000100000001 /* ZolaKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000022B00000100000001 /* BMSZaloiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMSZaloiOSApp.swift; sourceTree = "<group>"; };
+		A10000072B00000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000082B00000100000001 /* BMSZalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMSZalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000092B00000100000001 /* . */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BMSZalo; path = .; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A100000A2B00000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000032B00000100000001 /* BMSZaloApp in Frameworks */,
+				A10000052B00000100000001 /* ZolaKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A100000B2B00000100000001 = {
+			isa = PBXGroup;
+			children = (
+				A10000092B00000100000001 /* . */,
+				A100000C2B00000100000001 /* iOSApp */,
+				A100000D2B00000100000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A100000C2B00000100000001 /* iOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				A10000022B00000100000001 /* BMSZaloiOSApp.swift */,
+				A10000072B00000100000001 /* Info.plist */,
+			);
+			path = iOSApp;
+			sourceTree = "<group>";
+		};
+		A100000D2B00000100000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000082B00000100000001 /* BMSZalo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A100000E2B00000100000001 /* BMSZaloiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A100000F2B00000100000001 /* Build configuration list for PBXNativeTarget "BMSZaloiOS" */;
+			buildPhases = (
+				A10000102B00000100000001 /* Sources */,
+				A100000A2B00000100000001 /* Frameworks */,
+				A10000112B00000100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMSZaloiOS;
+			packageProductDependencies = (
+				A10000042B00000100000001 /* BMSZaloApp */,
+				A10000062B00000100000001 /* ZolaKit */,
+			);
+			productName = BMSZalo;
+			productReference = A10000082B00000100000001 /* BMSZalo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000122B00000100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = A10000132B00000100000001 /* Build configuration list for PBXProject "BMSZaloiOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = vi;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				vi,
+				Base,
+			);
+			mainGroup = A100000B2B00000100000001;
+			packageReferences = (
+				A10000182B00000100000001 /* XCLocalSwiftPackageReference "." */,
+			);
+			productRefGroup = A100000D2B00000100000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A100000E2B00000100000001 /* BMSZaloiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10000112B00000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000102B00000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000012B00000100000001 /* BMSZaloiOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10000142B00000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000152B00000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A10000162B00000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				INFOPLIST_FILE = iOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vn.beos.bmszalo.ios;
+				PRODUCT_NAME = BMSZalo;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A10000172B00000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				INFOPLIST_FILE = iOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vn.beos.bmszalo.ios;
+				PRODUCT_NAME = BMSZalo;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A100000F2B00000100000001 /* Build configuration list for PBXNativeTarget "BMSZaloiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000162B00000100000001 /* Debug */,
+				A10000172B00000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000132B00000100000001 /* Build configuration list for PBXProject "BMSZaloiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000142B00000100000001 /* Debug */,
+				A10000152B00000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A10000182B00000100000001 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A10000042B00000100000001 /* BMSZaloApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000182B00000100000001 /* XCLocalSwiftPackageReference "." */;
+			productName = BMSZaloApp;
+		};
+		A10000062B00000100000001 /* ZolaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000182B00000100000001 /* XCLocalSwiftPackageReference "." */;
+			productName = ZolaKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+	};
+	rootObject = A10000122B00000100000001 /* Project object */;
+}

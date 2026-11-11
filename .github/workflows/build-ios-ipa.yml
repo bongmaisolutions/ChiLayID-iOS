@@ -1,0 +1,46 @@
+name: Build ChiLayID iOS IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-ipa:
+    runs-on: macos-14
+    steps:
+      - name: Checkout BMSZalo
+        uses: actions/checkout@v4
+
+      - name: Generate Xcode Project via XcodeGen
+        run: |
+          brew install xcodegen
+          xcodegen generate
+
+      - name: Build ChiLayID for iOS Device (arm64, unsigned for Sideloadly/AltStore/TrollStore)
+        run: |
+          xcodebuild clean build \
+            -project BMSZaloiOS.xcodeproj \
+            -scheme BMSZaloiOS \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
+
+      - name: Package Payload into ChiLayID.ipa
+        run: |
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/BMSZalo.app Payload/ChiLayID.app
+          zip -r9 ChiLayID.ipa Payload
+
+      - name: Upload ChiLayID.ipa Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ChiLayID-iOS-IPA
+          path: ChiLayID.ipa
+          retention-days: 30
