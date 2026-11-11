@@ -23,9 +23,7 @@ targets:
         PRODUCT_NAME: ChiLayID
         SWIFT_VERSION: 5.9
         TARGETED_DEVICE_FAMILY: "1,2"
-        CODE_SIGNING_ALLOWED: NO
-        CODE_SIGNING_REQUIRED: NO
-        CODE_SIGN_IDENTITY: ""
+        CODE_SIGN_STYLE: Automatic
     dependencies:
       - package: BMSZalo
         product: BMSZaloApp
